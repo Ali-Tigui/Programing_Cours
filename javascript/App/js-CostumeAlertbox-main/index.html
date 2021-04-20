@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        #msg{
+            position:fixed;
+            left:30%;
+            top:300px;
+            z-index: 1000;
+            width:30%;
+            word-wrap: break-word;
+            text-align: center;
+            background: #266065;
+            color:#727272;
+            display:none;
+        }
+        span{
+            display: inline-block;
+            width:90px;
+            height:30px;
+            text-align: center;
+            text-transform:uppercase;
+            border:#beb2b2 1.5px solid;
+            color:#7c7c7c;
+            border-radius: 12px;
+        }
+        #cont{
+            z-index: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="cont" onmousedown="window.msg.style.display='none';window.cont.style.opacity=1;">
+        <span>cilck me</span>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+        <h1>Welcome</h1>
+    </div>
+    <div id="msg"><p>hhhhhhhhhhh</p><button id="btn" onclick="window.msg.style.display='none';window.cont.style.opacity=1;">ok</button></div>
+    <script>
+    document.querySelector("span").onclick=function(){
+        window.msg.style.display="block";
+        window.cont.style.opacity=0.1;
+     
+    }
+   
+    </script>
+</body>
+</html>
