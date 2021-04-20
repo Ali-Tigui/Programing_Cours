@@ -1,0 +1,368 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+# Intro :
+# python is hight level programing langague it usedull anywhere it main domain is hacking
+# artificiale intelegent and can be used for make app and website and video games
+# python programe end with the extention .py
+# for print in python we use print() function
+# for get input from user we use input() the value will be in string format  
+# for write comment in python we use #
+
+************************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      Variable and data type   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+************************************************************************************************
+#_I)String :__________________________________________________________________________________
+# are type of data they are character or word or text we have to write them inside ""
+# Example : print("hello")
+#     A) Some function in string :
+# 1-transform string to upper case we use .upper()
+# 2-transform string to lower case we use .lower()
+# 3-transform string to capitalize we use .capitalize()
+# 4-we van use.title() to transfomr first of each word to upper case
+# 5-check if string is upper or lower we use .isupper() or .islower() it return True or False
+# 6-get string length we use len()
+# 7-we can acces string character using index exapmle name[2] acces third character
+# 8-for get index of special charecter we use .index("a")  
+#     Remarque :if character introvable it will throw errour
+#     or we can use .find() it return -1 if character introuvable
+# 9-we can replace character or name with other using.replace("a","b")it will replace a with b
+#     we can add thir value it mean how much element we cant relplec exemple set it 2 and we
+#     have 4 "b" it will replace only the 2 
+# 10-concate 2 string  we use + 
+# 11-for jump line in string we use \n for add white space we use \t
+# 12-if we use tall string its better to use """string""" this will note cause errour when we
+#     go to the next line  but it will show the lines break
+# 13-\b back space remove the character before it
+# 14-\r replace betwion tow part of string
+# 15-\xhh get haximal value and we can write charecter using it
+# 16-we can use \ for writ string in many line it help when we jump line it not cause erreur
+# 17-for string we can use * operateur for make it repate specifique time
+# 18-.strip() used for remove innecesary space from lest and right off our string 
+# 19-.rstript() remove space from right .lstrip() remove from the left
+# 20-ord("a") can be used for get nemurique representation of character
+# 21-we can use r'string' this will ignore all backslash in our string
+# 22-we can use f"string" that will help use to do operation indide our string or call 
+#     variable inside it by writing the inside {} or we can use .format() inside it value we 
+#     want add Exmple : text="ali {} {}".format(45,power)
+# 23-we can split string and transform it to list usong split method split() inside it we can
+#   pass argument how we want split it bu character or white space ...
+# 24-for check if string is number ot not we use .isdigit()
+# 25-for check if string is complete alphabitic if ther is number or space it return false
+#      we use .isalpha()
+# 26-we can slice string using slice() function it work like indexing
+
+************************************************************************************************
+
+#_II)Number :__________________________________________________________________________________
+# they are tow type float that have . and intger simple number
+# 1-Operateur in number + adition * multiplication - substraction / divition ** expentiennel
+#     % module (rest of divition) // get result of divition in itenger type
+# 2-we can transform number to string using function str()
+# 3-variable function abs() for get value absolute power(2,3) get power 2^3
+# 4-get min and max of tow number min() max()
+# 5-round() round float number to intger
+# 6-there is other many math function that can use them with number 
+#     but we have import math module. Exemple :ceil() floor() sqrt()
+# 7-we can use 2e3-> (2 *10^3)
+# 8-logical operateur == equal > biger then < less then != not equal  >=big or equal <= less or
+#     equal
+# 9-we can compare also using is(==) and is not(!=)
+# 10-we can write number using _ Example :1000 =1_000
+# 11-python accept complex number Exemple : 5+4j we can transform number to complex form using
+#     complex() function
+# 12-we can use += /= *= %= -= //= **= it mean assign the variable to it's self then do
+#     operation
+# 13-we can use 0b for write number using binary representation .for get binary representation
+#     of number we use bin() function
+# 14-we can use 0x for write number using haximal representation for get haximal
+#     representation of number we can use hex() function
+
+***********************************************************************************************
+
+#_III)List :___________________________________________________________________________________
+# list can creat by put element inside [] it can have all type of data inside it.we can access
+# it's element using index number  we start counting from 0 we can acces speciale elements by
+# using (:) Example : name[1:6] for access element from the second to the element before the
+# last index or name[4:] for access element from the five to tke last one.  
+# we can use negative index for start counting from the end.
+# Some function that work with list: 
+# 1-list1.extend(list2) it used foor add list2 to the end of list1
+# 2-.append() for add element to end of the list
+# 3-.insert(indx,element) it used for insert element in specifique index
+# 4-.remove() for remove element from the list it remove the first element that it 
+#     find notall
+# 5-.clear() we use it for clear the list end return it to in empty list
+# 6-.pop() remove the last element from the list or we can add i ndex of element that we want
+#     remove with pop() we can store element that we remove in variable
+# 7-.index() for check element if exist in list
+# 8-len() for get number of element in list  
+# 9-.sort() for sort the list alfabitacly or by number
+# 10-.reverse() for reverse list reverse it courant order
+# 11-.copy() for coppy list element to anothe Exemple : list2=list1.copy()
+# 12-we use.count(element) for count how many the element is repeted in the list
+# 13-we can slice from list and take specifique element list1[strat:end;step] this work with
+#     string too
+# 14-we can concat list using + . we can make repite using * like with string
+ 
+***********************************************************************************************
+
+#_IV) Tuple :_________________________________________________________________________________
+# tuple are type of list that we can modifie or add or remove it's element , we can acces tuple
+# element using index number reverse sort an many of list element dont work in tuple
+# for creat tuple we write element inside () Exemple : names=("ali","me","tigui")
+# we  can delete tuple using  del Exemple : del tuple3
+
+***********************************************************************************************
+
+#_V)_Set_______________________________________________________________________________________
+# set is colection of element we can creat empty set using x= set() we can creat set using 
+# dictionary notation but not use key calue pair Exemple : s={4,5,7,8,9} 
+# for add element to set we use s.add(element) . for remove we use .remove() for check if
+# element is in set we use the keyword in 
+# we can add tow set together using set1.union(set2) or we use .update()
+#     for union we set it to new variable but .update() update the courant set
+# we can get defference using set1.difference(set2)
+# we can get intersection set1.intersection(set2)
+# we can transfomr lise into set by passing like argument to set function Exemple : set(list1)
+# in sset element can't repeat and transform list to set will remove repetive value
+
+***********************************************************************************************
+
+#_VI)Variable :________________________________________________________________________________
+# variable in python are like box where we store datathat can be string number or boolean ...
+# variable name can be anything but :
+# *> variable name can't start with number or $
+# *> variable name can't have - or space
+# *> variable name can't be reserved word like for if ... 
+# *> for get resserved word list we use help("keywords") 
+# 1-for creat variable we use name="ali" 
+# 2-we can get variable type using type(myVar)
+# 3-we can creat variable wuth short hand code using a,b,c=1,2,3
+***********************************************************************************************
+#_VII)Change variable type :____________________________________________________________________
+# we can chavge variable type by using one of the following function
+# 1-we use str() for transform variable to string
+# 2-we use int() for transform variable to intger
+# 3-we use bool() for transform variable to boolean
+# 4-we use float() for transform variable to float
+#
+  
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@        Condition_logical operateur     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# we can express condition in python using if condition : function it will run the code if 
+# the condition is true else it will do nothing we can add secondary condition using elif 
+# statement and we can use else: it will run our code in the end if all conditions are false
+# 1-we can use many condition in when if statement for that we use logical operateur
+# *>or we use it for combine many operateur  it always return true only if all condition
+#       false it return false
+# *>and we use it for combine many condition it return true only if all condition are true 
+#       else it return false
+# *>not negative operateur it turn true into false and false to true
+# *> we can do many comparaison in if condition like math Exemple :if 4<a<6:
+# 2-we can write condition in shor hand using message ="big"  if age >=18 else "small"
+#
+***********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@               Function                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# for creat function in python we use the key def the function name with()we can write 
+# parametre or let them empty then : and after that th statmen that we want be belong to our
+# function we must intended the like wi use with condition
+# for make our function work we have to call it Example: greet()
+# function can have parametre when we creat it and those prammetre can have argument when we 
+# call our function Exemple :
+# *> def call(name):
+# *>     return name
+# *>call("ali")
+# if in argument is messing this will  throw erreur
+# there is tow type of function 
+# 1-function that do task.
+# 2-function that return value
+# 3-we can assign function that return value to variable store it for later use
+# 5-we can make function more redeable by assign argument to parametre when we call it
+#      like pair of key value Exemple : call(name="ali")
+# 6-we can make parametre optionel by assign default value for it
+# 7-we can make function accept inlimite number of argument bu using (*param) vut they will be
+#     in tuple format . we can work with them by using loop
+# 8-we can mae function accept value of format value key (**paremtre) like dictionary
+#     Example greet(**name) *> greet(firstname="ali",lastname="tigui")
+# 9-variable that we creat in function are local variable we access them only inside our
+#     function
+# 10-return statment mean that the last linge of code statment after it will nor running
+# 11-w e can return many variable from function they will be stored in tuple 
+#     Exepmle: return x,y .this will return x and y in tuple
+# 12-we can pass list like argument for function using *args it i will unpacke all it's 
+#    elementadd(*el) this will accept how much we want of element and transfrom the to tuple 
+# 13-for dictionary we use **kwargs
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@                 Loop                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# in python ther is tow type of loop while loop that work while our  condition is true and 
+# for loop it work for specific amount fo time we can use else with loop for run code when
+# our condition true
+# we can use time.sleep() with loop it will sepecific the time that take or sleep after 
+# chaque move
+
+__I)For Loop :________________________________________________________________________________
+
+# we can use it with rang function for make statment work specific time 
+# Exemple for i in range(5): print("hello")
+# we can loop throught list element Example for name in names : print(name)
+# we can break loop if conditin is true by adding condition and using the keyword break
+# we can use pass or continue for jump to next step and don't run code if condition is true
+# we can use it for loop around string character
+# we can nest loop inside other
+
+__II)While Loop :_____________________________________________________________________________
+
+# we use it ro run code while our condition true we can make that  by using start value and
+# decrement or by seting flag to it
+# Example : a=0 while a<10 : print(a) a+=1 
+# we can use break for break loop when the condition is true and we can use pass and continue
+# we must be carfull when work with while loop we can stick in infinite loop
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@              Dictionary                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# dectionary used for store data in pair format key value key can be string or number
+# we can creat dictionary using {} Exemple : number={"one":1,"tow":2,"three":3,}
+# and we can also creat it bu using dict() function Exemple : number=dict(one=1,tow=2,three=3)
+# Exemple 2 : number = dict({"one":1,"tow":2,"three":3})
+# Exemple 3 : number = dict([("one",1),("tow",2),("three",3)])
+# we can creat empty dictionary by using number={} or number=dict()
+# we can acces dictionaru value by using keys Exmple : number["one"] or using.get() function
+# number.get("one") 
+# we can change the value of key in dictionary or add new key value Example : number["five"]=5
+# we can get all value from dicionary using dic.values()
+# we can get all key from dictionary using dic.keys()
+# we can del key using del dic["key1"]
+# we can loop throught dictionary using for key, value in x.items(): print(key , value)
+# or using for key in dic: print(key,dic[key])
+# we can get dictionary item using dic.items()
+# we can update dictionary key value using .update({key:value})
+# we can use .pop("key") for dictionary
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@            Work with file              @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# we can in python read and write file first we open it using open() it accept tow value file 
+# location and method that we want open the file for like "r" read "a" append new text "w" 
+# over write the text the change in our file will not apear unil we close it
+# Exemple writing : file = open("test.txt","w") then for write we use file.write("text")
+# then we use file.close()
+# we can write multiple line using writelines('') and wreate line by using list
+# we can use file=open("test.txt","a") now when we use file.write("text") it will append new
+# text to our file it will not overwrite it 
+# Remarque: for write in new line we use \n Exemple file.write("\new line here") 
+# for read file we open it in "r" read mode 
+# we can use .readable() function for check if file is readable or not it will return True
+# or False
+# for read all file we use file.read() it will read all our file
+# we can use file.readline() it will read the file line by line it go next line each time we
+# call it
+# we can use .readlines() this will take all line in our file and put them in array
+# Some argument when we open our file :
+# "r" read "r+" read and write "w" write and can creat if file don't exict "w+" read write
+# and creat "a" add text and creat "a+" creat add text an read
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@         Dealing With Error             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# error someetime can break our program for deal with error and avoid that we use try: for try
+# our code and nothing will happen if error apear then we can use except: it will catch error 
+# if it apprer and run code inside it but this will catch all error for catch special type of
+# error we can add type of error after except Exemple : except ZeroDivisionError:  this will
+# catch dividing by zero error we can catch error and put it in variable  then print it
+# Exemple : except ValueError as err: print(err)
+# we use finally: it will run the code inside it in all way if error apear or not
+# we can use else with try and except it will run our code if no error apear
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@                 Module                  @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# module are python file where we can store class or function for use them in other programe
+# we can import the by using the keyword import Exmple: import random 
+# we can import only 1 function from our file or many function using ketword from import
+# Exemple: form module1 import function1,function2,function3 
+# for import all function from module we use from module1 import * this will import all 
+# function from our module
+# if we have variable or function have the same name of our module or our function we can
+# change it whe, import it using import module1 as mod1 or from module1 import function1 as fc
+# we can get new module from the net or people modules by installing them using pip install 
+# moduleName for unistall them we use pip unistall moduleName 
+# thos module that we install will stor in lib and site-packages
+# we can search for usefull pakacge an Pypi we will find all module that we want
+# we can ipmort variable from module
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@                 Packages               @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# package ar collection of module that reffer to same fonctinality 
+# for creat package we just creat floder then we put __int__.py inside it 
+# then we can creat module that we want in our module 
+# for print module from packege we use from package import module
+# or we can import function from module from packege using 
+# from packege.module import function1
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@           Class and object             @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# object are type of data that we use for simulate real word object like studant car phone and
+# other thins class are templat that we use it better for creat our class in new file (module)
+# not in same file where is our programefor creat our object we creat class using class
+# key word Exemple:
+# class student:
+#     def __int__(self,name,moyenne,age)
+#         self.name=name
+#         self.age=age
+#         self.moyenne=moyenne
+# new for creat pur object we jusst creat variable annd assign our class to it after set 
+# argument for our parametre Exemple: student1=student("ali",13,20)
+# then we can acces part of our object using object.part Exemple : student1.name 
+# we can add function inside our class Exemple:
+# def is_admet(self):
+#    if self.moyenne > 10:
+#        return True
+# then we can call it after calling our object print(student1.is_admet())
+# some  time we want creat new class but it may have same function or same class of in old
+# class for do that we use inheritance that by creat our new class and pass our old class
+# like prametre for it Exemple : class etudiant(studant):
+# this will copy all studant class method and part to etudiant class if we change some method
+# or part we can over write them
+
+**********************************************************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@               Remarque                 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+# 1-in python we can't use decrement x++ and x--
+# 2-there is only 2 type of loop for and while
+# 3- we can nest list inside liste
+# 4-string in python are Immutable if we assigne new value to variable have string it will not
+# assign new variable to it it will just creat new variable have the value that we want and
+# for check that we can ue the function id() that reture tha id of memery adress where our 
+# variable is stored we remarque it not the same and if try assign new value to string char 
+# it will cause error
+# list are mutable we can change it value 
+# list set dict are mutable but boolean int float string tuple unicode are Immutable
+# when we assign mutabel variable to another new variable they will be the same any change
+# apear to the first one will work in the second one
+# 5-adding end= to print will spesific how we want our output end the standare is "\n"
+# 6- object in python have attribut and method
+# 7-python don't have switch case like some programing language
+# 8-"""can use for comment but that not the right way otherwy it can be used like function 
+#    deffinition
+
+
+
+
